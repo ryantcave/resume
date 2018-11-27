@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Header, Footer} from './Layouts';
-import Avatar from './Layouts/Avatar';
+import { Header, Footer, Avatar} from './Layouts';
 
 export default class extends Component {
     render() {
