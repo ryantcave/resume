@@ -18,8 +18,7 @@ const styles = {
         flexGrow: 1,
     },
     menuButton: {
-        marginLeft: -12,
-        marginRight: 20,
+        marginRight: 15,
     },
 };
 
@@ -32,9 +31,16 @@ function ButtonAppBar(props) {
                     <Typography variant="h6" color="inherit" className={classes.grow}>
                         Under Construction
                     </Typography>
-                    <IconButton href="https://github.com/ryantcave/" className={classes.Button} aria-label="Github">
-                        <BackupIcon />
-                    </IconButton>
+                    <Button href="https://www.linkedin.com/in/ryan-cave/" variant="contained" color="secondary" className={classes.menuButton}>
+                        <Typography variant="button" color="inherit" align="left" className={classes.grow}>
+                            LinkedIn
+                        </Typography>
+                    </Button>
+                    <Button href="https://github.com/ryantcave/" variant="contained" color="secondary" className={classes.button}>
+                        <Typography variant="button" color="inherit" align="left" className={classes.grow}>
+                                Github
+                        </Typography>
+                    </Button>
                 </Toolbar>
             </AppBar>
         </div>
