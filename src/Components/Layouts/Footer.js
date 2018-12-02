@@ -1,18 +1,33 @@
-import React from "react";
-import Typography from '@material-ui/core/Typography';
-import Button from "@material-ui/core/Button/Button";
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import signature from '../../img/signature.png'
 
+const styles = {
+    footer: {
+        textAlign: "center",
+        position: "fixed",
+        left: "0",
+        bottom: "0",
+        height: "60px",
+        width: "100%",
+    },
+    container: {
+        height: 43,
+        width: 183,
+        backgroundImage: `url(${signature})`
+    }
+};
 
-export default props =>
-    <div>
-        <Typography align="center" variant="overline">
-            Hi, my name is Ryan Cave. I am an undergraduate Computer Science major at Baylor University.
-        </Typography>
-        <Typography align="center" variant="overline" gutterBottom="true">
-            This website is a personal portfolio project implementing React.js, Material-UI, and Parcel.
-        </Typography>
+function ImageAvatars() {
+    return (
+        <div style={styles.footer}>
+            <Grid container justify="center" alignItems="center">
+                <div style={styles.container}>
+                </div>
+            </Grid>
+        </div>
+    );
+}
 
-        <Button color="secondary" variant="contained" align="center" fullWidth='true' disabled>
-            Under Construction
-        </Button>
-    </div>
+export default withStyles(styles)(ImageAvatars);

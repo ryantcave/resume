@@ -8,18 +8,12 @@ const theme = createMuiTheme({
     palette: {
         type: 'dark',
         primary: {
-            // light: will be calculated from palette.primary.main,
-            main: '#181712',
-        },
-        secondary: {
-            light: '#B0ABA0',
-            main: '#6ABED8',
-            // dark: will be calculated from palette.secondary.main,
-            contrastText: '#F0F0F0',
+            main: '#131313',
+            dark: '#131313',
+
         },
         background: {
-            background: '#6ABED8',
-
+            default: '#131313',
         }
     },
 });
