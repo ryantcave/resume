@@ -7,3 +7,5 @@ node_modules/
 *.ipr
 .idea/
 *.xml
+_windows
+codestyles
