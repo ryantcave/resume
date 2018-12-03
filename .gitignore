@@ -9,3 +9,5 @@ node_modules/
 *.xml
 _windows
 codestyles
+dist
+.cache

@@ -1,21 +1,21 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import signature from '../../img/signature.png'
 
 const styles = {
     footer: {
-        textAlign: "center",
         position: "fixed",
         left: "0",
         bottom: "0",
         height: "60px",
         width: "100%",
+
     },
     container: {
         height: 43,
         width: 183,
-        backgroundImage: `url(${signature})`
+        backgroundImage: `url(${signature})`,
     }
 };
 

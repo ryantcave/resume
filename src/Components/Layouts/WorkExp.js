@@ -1,10 +1,10 @@
 import React from "react";
-import banner from "../../img/skills_small.png";
+import banner from "../../img/WorkExperience.png";
 import Grid from "@material-ui/core/Grid/Grid";
 
 const styles = theme => ({
     imgContainer: {
-        height: 600,
+        height: 550,
         backgroundImage: `url(${banner})`
     }
 });
@@ -15,4 +15,3 @@ export default props =>
             <img src={banner} />
         </Grid>
     </div>
-
