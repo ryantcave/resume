@@ -3,5 +3,5 @@ import React from "react";
 
 export default props =>
     <Button color="inherit" variant="contained" align="center" fullWidth='true' disabled>
-    Under Construction
+
     </Button>

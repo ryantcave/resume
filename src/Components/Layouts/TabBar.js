@@ -5,7 +5,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Skills from './Skills';
-import ConstructionBar from './ConstructionBar';
 import WorkExp from './WorkExp';
 
 const styles = theme => ({
@@ -40,14 +39,10 @@ class ScrollableTabsButtonAuto extends React.Component {
                     >
                         <Tab label="Skills" />
                         <Tab label="Work Experience" />
-                        <Tab label="About Me" />
-                        <Tab label="Contact" />
                     </Tabs>
                 </AppBar>
                 {value === 0 && <Skills />}
                 {value === 1 && <WorkExp />}
-                {value === 2 && <ConstructionBar />}
-                {value === 3 && <ConstructionBar />}
             </div>
         );
     }
